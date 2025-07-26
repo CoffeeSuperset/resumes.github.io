@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Kyle | Timeline Resume</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #1a1a1a;
+      color: #f5f5f5;
+      margin: 0;
+      padding: 20px;
+    }
+    h1, h2 {
+      color: #f26a2e;
+      text-align: center;
+    }
+    .timeline {
+      position: relative;
+      max-width: 900px;
+      margin: auto;
+    }
+    .timeline::after {
+      content: '';
+      position: absolute;
+      width: 4px;
+      background-color: #f26a2e;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      margin-left: -2px;
+    }
+    .container {
+      padding: 20px 40px;
+      position: relative;
+      background-color: inherit;
+      width: 50%;
+    }
+    .left {
+      left: 0;
+    }
+    .right {
+      left: 50%;
+    }
+    .left::before, .right::before {
+      content: " ";
+      position: absolute;
+      top: 15px;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      background-color: #f26a2e;
+      border: 4px solid #fff;
+      z-index: 1;
+    }
+    .left::before {
+      right: -17px;
+    }
+    .right::before {
+      left: -17px;
+    }
+    .content {
+      background-color: #2a2a2a;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    @media screen and (max-width: 768px) {
+      .container {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+      }
+      .right {
+        left: 0;
+      }
+      .timeline::after {
+        left: 31px;
+      }
+      .left::before, .right::before {
+        left: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Kyle Gabriel Brillo Michael</h1>
+  <h2>My HHN Resume</h2>
+  <div class="timeline">
+    <div class="container left">
+      <div class="content">
+        <h3>Feb 2023 – Apr 2023</h3>
+        <p><strong>Retail Associate – UNIQLO</strong><br>Helped launch a new store, managed crowd, delivered under pressure.</p>
+      </div>
+    </div>
+    <div class="container right">
+      <div class="content">
+        <h3>2019 – 2022</h3>
+        <p><strong>Volunteer – Canberra Sec</strong><br>Supported school events, logistics, guest assistance.</p>
+      </div>
+    </div>
+    <div class="container left">
+      <div class="content">
+        <h3>2019 – 2022</h3>
+        <p><strong>Symphonic Band – SYF</strong><br>Learned discipline, teamwork, and performance under pressure.</p>
+      </div>
+    </div>
+    <div class="container right">
+      <div class="content">
+        <h3>2024 – 2027</h3>
+        <p><strong>Nanyang Polytechnic</strong><br>Diploma in Aeronautical & Aerospace Engineering (in progress).</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
